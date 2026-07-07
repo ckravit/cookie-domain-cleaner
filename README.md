@@ -47,4 +47,4 @@ Temporary add-ons loaded this way are removed when Firefox restarts.
 - Cookie deletion depends on Firefox extension permissions and the cookie stores Firefox exposes to the extension.
 
 ## Have fun!
-![cookie-domain-cleaner icon](cookie-eater.png)
+![cookie-domain-cleaner icon](firefox/cookie-eater.png)
