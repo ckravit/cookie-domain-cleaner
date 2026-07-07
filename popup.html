@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Cookie Domain Cleaner</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="panel">
+    <header class="header">
+      <div>
+        <h1>Cookie Domain Cleaner</h1>
+        <p class="subtitle">Find and remove cookies by matching text in the cookie domain.</p>
+      </div>
+    </header>
+
+    <section class="card">
+      <label for="domainText">Domain text</label>
+      <div class="input-row">
+        <input id="domainText" type="text" value="microsoft" autocomplete="off" spellcheck="false">
+      </div>
+      <p class="hint">Default: <code>microsoft</code>. Examples: <code>microsoft.com</code>, <code>login.microsoftonline.com</code>.</p>
+    </section>
+
+    <section class="actions" aria-label="Cookie actions">
+      <button id="count" class="button secondary">Count cookies</button>
+      <button id="delete" class="button danger">Delete cookies</button>
+    </section>
+
+    <section class="result-card">
+      <div id="status" class="status" role="status">Ready.</div>
+      <pre id="details" aria-label="Cookie result details"></pre>
+    </section>
+  </main>
+
+  <script src="popup.js"></script>
+</body>
+</html>
